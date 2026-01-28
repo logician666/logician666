@@ -15,6 +15,6 @@ If you are interested in having a chess game with me, you can challenge me on
 Chess.com by looking-up `logician666x` (I used to have my ubiqitous `logician666`  
 username, but I deleted it on one my depression waves; stupid of me!).
 
-If you are striving to do your work with conscientiousness like me, I hope  
-our roads cross sometime in the future, where we build marvellous things,
+If you are striving to do your work with conscientiousness and rigour, just as I am,
+I hope our roads cross sometime in the future, where we build marvellous things,
 together!
