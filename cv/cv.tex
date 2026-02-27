@@ -1,85 +1,157 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 
-% ModernCV themes
-\moderncvstyle{classic} 
+% ModernCV theme — 'banking' gives a cleaner, more modern header
+\moderncvstyle{banking}
 \moderncvcolor{blue}
 
-% Character encoding
+% Encoding & font
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
-% Adjust the page margins
-\usepackage[scale=0.75]{geometry}
+% Margins
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.8cm, right=1.8cm]{geometry}
 \recomputelengths
 
-% Personal Information
-\name{Hisham}{Ahmed}
-\title{Senior Business Analyst}
-\phone[mobile]{+201140400740}
+% Custom color accent (deep professional blue)
+\definecolor{color1}{RGB}{26, 82, 118}
+
+% Reduce spacing between list items
+\usepackage{enumitem}
+\setlist[itemize]{topsep=2pt, itemsep=1pt, parsep=0pt}
+
+%-------------------------------------------------------------------
+%  Personal Information
+%-------------------------------------------------------------------
+\name{Hisham}{A.}
+\title{Business Analyst}
+\phone[mobile]{+20\,114\,040\,0740}
 \email{Hisham-666@outlook.com}
 \social[linkedin]{logician666}
+\address{Cairo, Egypt}{}{}
 
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
+%-------------------------------------------------------------------
 \begin{document}
 \makecvtitle
+\vspace{-10pt}
 
+%-------------------------------------------------------------------
 \section{Professional Summary}
-Business Analyst experienced in ERP implementation, customization, data analysis, and cross-functional project delivery. Background in accounting combined with strong analytical, logical, and process-oriented competencies. Skilled in requirements engineering, system configuration, workflow optimization, and solution evaluation.
+%-------------------------------------------------------------------
+Business Analyst with 5+ years of progressive experience spanning accounting, ERP administration,
+and systems delivery. Brings rare end-to-end fluency across finance, operations, and technology ---
+enabling faster gap analysis, more credible stakeholder engagement, and implementations that stick.
+Proven across multi-territory deployments, enterprise migrations, and automation pipelines that have
+saved organisations over USD 120K in costs and 16+ man-hours weekly.
+%-------------------------------------------------------------------
+\section{Skills}
+%-------------------------------------------------------------------
+\cvitem{Business Analysis}{Requirements Engineering, Process Mapping (As-Is / To-Be), Gap Analysis, BRD / FRD / SRS}
+\cvitem{Delivery \& Quality}{UAT Planning \& Execution, Test Case Design, Go-live Readiness}
+\cvitem{Stakeholder Enablement}{Cross-functional Facilitation, User Training, Change Management, SOP \& User Guide Documentation}
+\cvitem{Data \& Reporting}{Power BI, Metabase, Excel, Google Sheets, Python (NumPy, Pandas, Matplotlib), Jupyter Notebooks}
+\cvitem{Automation \& Integration}{ETL pipeline design, Workflow automation, Python scripting, Data Migration}
+\cvitem{Enterprise Platforms}{Oracle NetSuite, Odoo, ClickUp}
+\cvitem{Tooling}{StrictDoc, Doorstop, Draw.io, Visio, GitHub, \LaTeX, Markdown, NeoVim}
 
-\section{Core Competencies}
-\cvitem{Analysis}{Business Analysis, Requirements Engineering, Data Analysis}
-\cvitem{Systems}{ERP Implementation, Workflow Automation, Process Optimization}
-\cvitem{Management}{Stakeholder Management, Project Coordination, UAT \& QA}
-\cvitem{Documentation}{BRD, FRD, User Manuals, Training Materials}
-
-\section{Technical Skills}
-\cvitem{ERP Systems}{Oracle NetSuite, Microsoft Dynamics NAV, Dynamics 365 F\&O}
-\cvitem{Tools}{Power BI, Draw.io, \LaTeX}
-\cvitem{Programming}{Python (NumPy, Pandas, Matplotlib)}
-\cvitem{Data}{Python ETL, SQL, Data Migration}
-
+%-------------------------------------------------------------------
 \section{Professional Experience}
-\cventry{Jan 2025 -- Present}{Senior Business Analyst}{Flat6Labs for Incubators Co.}{Remote}{}{%
-\begin{itemize}%
-\item Lead the elicitation, documentation, and management of functional requirements for cross-functional stakeholders.
-\item Execute gap analysis to align business requirements with technical specifications for customization or development.
-\item Configure and deploy business applications, ensuring optimal system alignment with organizational workflows.
-\item Orchestrate UAT phases, developing comprehensive test cases and resolving post-implementation issues.
-\item \textbf{Key Achievements:}
-    \begin{itemize}
-    \item Successfully implemented 10+ subsidiaries across 5+ countries on Oracle NetSuite.
-    \item Engineered support management protocols for multi-territory operational scalability.
-    \item Designed workflow and data pipeline automations yielding approximately 8.4 man-hours saved monthly.
-    \end{itemize}
-\end{itemize}}
+%-------------------------------------------------------------------
 
-\cventry{July 2023 -- June 2024}{ERP Administrator}{Flat6Labs for Incubators Co.}{Remote}{}{%
-\begin{itemize}%
-\item Governed NetSuite environments (Production, Sandbox, Release Preview) and optimized hierarchical user permissions.
-\item Developed automation workflows resulting in a 25\% reduction in manual task redundancy.
-\item Synthesized complex datasets via Saved Searches and Power BI to provide actionable business intelligence.
-\item Facilitated technical support and recurring training for a multi-regional user base of 30+ employees.
-\end{itemize}}
+\cventry{2025 -- Present}%
+  {Business Analyst}%
+  {Flat6Labs \textnormal{\small(MENA's leading startup accelerator)}}%
+  {Remote}{}%
+  {%
+  \begin{itemize}
+    \item Lead end-to-end requirements elicitation, documentation, and lifecycle management for
+          cross-functional stakeholders across multiple business units.
+    \item Conduct gap analysis to reconcile business needs with technical specifications,
+          prioritizing scalable delivery decisions across enterprise applications.
+    \item Configure and deploy business applications, validating system alignment with
+          organizational workflows and data governance standards.
+    \item Design and execute UAT programmes — authoring comprehensive test cases, coordinating
+          sign-off, and resolving post-go-live issues with development teams.
+    \item[\textbf{$\star$}] \textbf{Key Achievements:}
+      \begin{itemize}
+        \item Saved the business over USD 120 K in annual licencing, subscription, and support
+	      costs through meticulous gap analysis for system migration, data backup and
+	      migration, internal implementation, and user training and change management.
+        \item Engineered scalable support-management protocols enabling seamless multi-territory
+              operational expansion.
+        \item Designed workflows and data-pipeline automations that save \textbf{\textasciitilde{}
+		16 man hours} per week.
+      \end{itemize}
+  \end{itemize}%
+  }
 
-\cventry{June 2022 -- June 2023}{Accountant}{Flat6Labs}{Hybrid}{}{%
-\begin{itemize}%
-\item Managed Accounts Payable (AP) operations and financial record-keeping within Oracle NetSuite.
-\item Performed rigorous bank reconciliations, expense reporting, and supported ERP implementation logistics.
-\end{itemize}}
+\cventry{2023 -- 2024}%
+  {ERP Administrator}%
+  {Flat6Labs \textnormal{\small(MENA's leading startup accelerator)}}%
+  {Remote}{}%
+  {%
+  \begin{itemize}
+    \item Administered enterprise system environments and governed role-based access control for a
+          \textbf{30+ user} multi-regional base.
+    \item Built Power BI reporting suite adopted by senior leadership for ongoing business intelligence.
+    \item Delivered recurring technical training and first-line support, ensuring high system
+          adoption across geographically distributed teams.
+    \item[\textbf{$\star$}] \textbf{Key Achievements:}
+      \begin{itemize}
+        \item Achieved a \textbf{25\% reduction} in manual task redundancy through workflow
+              automations, directly accelerating core finance processes.
+        \item Established the systems and reporting foundations that led to a promoted
+              Business Analyst role, overseeing the full delivery lifecycle.
+      \end{itemize}
+  \end{itemize}%
+  }
 
-\cventry{Jan 2021 -- May 2022}{Junior Accountant}{Progressive Business Services (IKEA KSA \& Bahrain)}{Hybrid}{}{%
-\begin{itemize}%
-\item Executed high-volume AP operations in Microsoft Dynamics NAV and managed accrued expense adjustments.
-\item Contributed to RPA initiatives for AP workflows and supported Dynamics 365 F\&O migration.
-\item Architected Power BI dashboards to track and optimize AP performance metrics.
-\end{itemize}}
+\cventry{2022 -- 2023}%
+  {Accountant}%
+  {Flat6Labs}%
+  {Hybrid}{}%
+  {%
+  \begin{itemize}
+    \item Managed full-cycle Accounts Payable (AP) operations and maintained accurate financial
+          records within Oracle NetSuite.
+    \item Performed rigorous bank reconciliations, expense reporting, and vendor statement matching.
+    \item[\textbf{$\star$}] \textbf{Key Achievement:}
+      \begin{itemize}
+        \item Played a hands-on role in the Oracle NetSuite go-live — supporting data migration,
+              system logistics, and post-launch stabilisation — directly earning the subsequent
+              ERP Administrator position.
+      \end{itemize}
+  \end{itemize}%
+  }
 
+\cventry{2021 -- 2022}%
+  {Junior Accountant}%
+  {Progressive Business Services \textnormal{\small(IKEA KSA \& Bahrain)}}%
+  {Hybrid}{}%
+  {%
+  \begin{itemize}
+    \item Contributed to RPA initiatives for AP workflow automation, demonstrating early
+          systems thinking beyond the accountant remit.
+    \item Supported the Dynamics NAV $\rightarrow$ Dynamics 365 F\&O migration project
+          across two market territories (IKEA KSA \& Bahrain).
+    \item Designed Power BI dashboards to monitor AP KPIs (aging, cycle time, error rate),
+          enabling data-driven performance improvements.
+  \end{itemize}%
+  }
+
+%-------------------------------------------------------------------
 \section{Education}
-\cventry{2017 -- 2020}{Bachelor of Accounting}{Cairo University}{Cairo, Egypt}{}{Graduated with Honors (Very Good)}
+%-------------------------------------------------------------------
+\cventry{2016 -- 2020}%
+  {Bachelor of Accounting}%
+  {Cairo University}%
+  {Cairo, Egypt}%
+  {\textit{Graduated with Honors --- Very Good}}{}
 
+%-------------------------------------------------------------------
 \section{Languages}
-\cvitemwithcomment{English}{Fluent}{Professional Proficiency}
-\cvitemwithcomment{Arabic}{Native}{Mother Tongue}
+%-------------------------------------------------------------------
+\cvitemwithcomment{English}{Fluent}{Professional working proficiency}
+\cvitemwithcomment{Arabic}{Native}{Mother tongue}
 
 \end{document}
