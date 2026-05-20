@@ -18,6 +18,12 @@ tags: [profile, preferences, working-style]
 - Currently focused on mastering business analysis methodology, techniques, and applications.
 - Plays **chess** on Chess.com: username `logician666x` (original `logician666` was deleted during a difficult period).
 
+## File & Identifier Naming
+
+- **Kebab (`-`)** separates distinct concepts; **snake (`_`)** glues tokens within a single concept.
+- Example: `flat6labs-odoo_acct` reads as `[flat6labs] — [odoo account]`; `forever_bikes-kyc.md` reads as `[forever bikes] — [kyc]`.
+- Applies to filenames, folders, branches, and any user-facing slug. Lowercase throughout unless context requires otherwise.
+
 ## Tool Preferences
 
 - **Spotify:** Always open via web browser (`https://open.spotify.com/...`). Never use the desktop Flatpak app or the `spotify:` URI protocol. The web player is preferred; the desktop app is considered a resource hog.
