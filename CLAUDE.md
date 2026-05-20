@@ -39,7 +39,7 @@ for thinking, learning, training, or tooling. Those live in companion repos.
 - Personal journals, strategy, or life thinking → `thoughts/`
 - Formal knowledge nodes → `knowledge/`
 - Parkour training content → `parkour/`
-- System configuration and dotfiles → `laboratory-configs/`
+- System configuration and dotfiles → `sys-arch/`
 
 ---
 
@@ -50,6 +50,6 @@ for thinking, learning, training, or tooling. Those live in companion repos.
 | `logician666/thoughts` | Personal thinking — journals, decisions, fragments |
 | `logician666/knowledge` | Formal learning system — dependency-ordered nodes |
 | `logician666/parkour` | Physical training programme |
-| `logician666/laboratory-configs` | Linux workstation and tooling |
+| `logician666/sys-arch` | Linux workstation and tooling |
 
 Full architecture: [`ARCHITECTURE.md`](ARCHITECTURE.md)

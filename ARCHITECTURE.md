@@ -13,7 +13,7 @@ productivity system, but a structured representation of a person.
 | `logician666` | Identity — who I am, career, profile |
 | `thoughts` | Thinking — life strategy, decisions, journals, personal memory |
 | `knowledge` | Knowledge — what I have formally learned and validated |
-| `laboratory-configs` | Setup — my Linux workstation, tooling, and work environment |
+| `sys-arch` | Setup — my Linux workstation, tooling, and work environment |
 | `parkour` | Training — my physical conditioning programme |
 
 The cuts are not arbitrary. Each repo answers a different question:
@@ -89,7 +89,7 @@ not scribe unvalidated content.
 
 Two automated routines run in the background:
 
-- **Weekly:** validates `laboratory-configs` for gaps and opens a GitHub issue if
+- **Weekly:** validates `sys-arch` for gaps and opens a GitHub issue if
   anything would break a fresh machine migration
 - **Quarterly:** reviews the `logician666` profile vault for drift against reality
 

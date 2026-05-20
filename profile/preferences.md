@@ -4,7 +4,7 @@ tags: [profile, preferences, working-style]
 
 # Preferences & Working Style
 
-← [[Hisham]]
+← [[hisham]]
 
 ## Language & Writing
 

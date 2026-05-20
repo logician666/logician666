@@ -4,7 +4,7 @@ tags: [profile, career]
 
 # Career
 
-← [[Hisham]]
+← [[hisham]]
 
 ## Professional Summary
 

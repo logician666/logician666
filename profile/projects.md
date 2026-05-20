@@ -4,7 +4,7 @@ tags: [profile, projects]
 
 # Projects
 
-← [[Hisham]]
+← [[hisham]]
 
 ## Personal Foundations — Five-Repo Architecture
 
@@ -15,7 +15,7 @@ These five repositories are the core of my personal foundations. Each is a bound
 | [[#logician666 (this repo)]] | Identity, career, profile | `~/personal/logician666/` |
 | [[#thoughts]] | Life strategy, direction, personal memory | `~/personal/thoughts/` |
 | [[#knowledge]] | Formal learning system | `~/personal/knowledge/` |
-| [[#laboratory-configs]] | Linux workstation setup, work tooling | `~/laboratory-configs/` |
+| [[#sys-arch]] | Linux workstation setup, work tooling | `~/sys-arch/` |
 | [[#parkour]] | Physical training programme | `~/personal/parkour/` |
 
 ---
@@ -68,9 +68,9 @@ Governed by three skills: `/knowledge-inquirer` (read), `/knowledge-scribe` (wri
 
 ---
 
-## laboratory-configs
+## sys-arch
 
-**Repo:** [logician666/laboratory-configs](https://github.com/logician666/laboratory-configs) · **Local:** `~/laboratory-configs/`
+**Repo:** [logician666/sys-arch](https://github.com/logician666/sys-arch) · **Local:** `~/sys-arch/`
 
 Ansible playbook that fully reproduces the Fedora workstation on a fresh machine.
 Run: `ansible-playbook site.yml --ask-become-pass`

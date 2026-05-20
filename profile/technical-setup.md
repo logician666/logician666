@@ -4,7 +4,7 @@ tags: [profile, tech, setup]
 
 # Technical Setup
 
-← [[Hisham]]
+← [[hisham]]
 
 ## Hardware
 
@@ -91,8 +91,8 @@ tags: [profile, tech, setup]
 
 ## Ansible Configuration Repo
 
-All system configuration is captured in `~/laboratory-configs/` (Ansible playbook).
-Repo: [logician666/laboratory-configs](https://github.com/logician666/laboratory-configs)
+All system configuration is captured in `~/sys-arch/` (Ansible playbook).
+Repo: [logician666/sys-arch](https://github.com/logician666/sys-arch)
 
 Key roles: `packages`, `dotfiles`, `neovim`, `tmux`, `python_packages`, `npm_packages`, `applications`.
 Run: `ansible-playbook site.yml --ask-become-pass`

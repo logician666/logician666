@@ -30,7 +30,7 @@ Writes in **British English** — en-GB spelling always. Expects the same in all
 
 ## Sections
 
-- [[Career]] — professional history, roles, achievements
-- [[Technical Setup]] — hardware, OS, terminal stack, tools
-- [[Projects]] — ongoing personal and config projects
-- [[Preferences]] — how to collaborate, feedback rules, working style
+- [[career]] — professional history, roles, achievements
+- [[technical-setup]] — hardware, OS, terminal stack, tools
+- [[projects]] — ongoing personal and config projects
+- [[preferences]] — how to collaborate, feedback rules, working style
