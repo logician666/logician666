@@ -2,9 +2,11 @@
 
 ## What this repository is
 
-The identity hub. Public GitHub profile, CV, personal profile vault, and PKM
-architecture documentation. This is the bounded context for *who I am* — not
-for thinking, learning, training, or tooling. Those live in companion repos.
+**Root of the canonical personal tree** (see `~/.claude/CLAUDE.md` §4). The identity
+hub. Public GitHub profile, CV, personal profile vault, and PKM architecture
+documentation. This is the bounded context for *who I am* — not for thinking,
+learning, training, or tooling. Those live in companion repos (`thoughts`,
+`knowledge`, `sys-arch`, `parkour`) which hang off this root.
 
 ---
 

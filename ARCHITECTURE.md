@@ -10,11 +10,15 @@ productivity system, but a structured representation of a person.
 
 | Repository | What it models |
 |---|---|
-| `logician666` | Identity — who I am, career, profile |
+| `logician666` | Identity — who I am, career, profile (root of the tree) |
 | `thoughts` | Thinking — life strategy, decisions, journals, personal memory |
 | `knowledge` | Knowledge — what I have formally learned and validated |
-| `sys-arch` | Setup — my Linux workstation, tooling, and work environment |
-| `parkour` | Training — my physical conditioning programme |
+| `sys-arch` | Setup — **current state** of my Linux workstation, expressed as an Ansible playbook |
+| `parkour` | Training — **current state** of my physical conditioning programme |
+
+`sys-arch` and `parkour` are *current-state* nodes for their respective domains:
+modifying them is the canonical way to durably change the system or the training
+plan. Ad-hoc changes that don't make it back to these repos drift out of the model.
 
 The cuts are not arbitrary. Each repo answers a different question:
 *Who am I? How do I think? What do I know? How do I work? How do I move?*
@@ -93,8 +97,11 @@ Two automated routines run in the background:
   anything would break a fresh machine migration
 - **Quarterly:** reviews the `logician666` profile vault for drift against reality
 
-Auto-commit hooks in `thoughts` and `knowledge` ensure that edits made during a
-Claude Code session are immediately committed — the session leaves a trace.
+Commits in `thoughts` and `knowledge` are explicit rather than automated: each
+session's edits are committed with a meaningful message at the point the work
+reaches a coherent state. Explicit commits keep the git log readable as an
+audit trail of *thinking* and *learning*, which would be diluted by per-edit
+auto-commit noise.
 
 ---
 
@@ -140,5 +147,5 @@ how to build a knowledge system that remains queryable as it grows.
 
 ---
 
-*Profile vault: [`logician666/profile/`](profile/Hisham.md)*
+*Profile vault: [`logician666/profile/`](profile/hisham.md)*
 *Stack: Obsidian · Git · Claude Code*
