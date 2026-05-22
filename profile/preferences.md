@@ -42,6 +42,14 @@ tags: [profile, preferences, working-style]
 - Values rigour and formal correctness — sloppy approximations are not appreciated.
 - Expects tools and assistants to remember context and not repeat guidance.
 
+## Project Repo Layout
+
+Every project repository follows this subdirectory convention:
+
+- `notes/` — Obsidian vault root for the project.
+- `documentation/` — Sphinx docs (if the project has docs).
+- `requirements/` — StrictDoc requirements (if the project has formal requirements).
+
 ## Obsidian / Notes
 
 - Per-project Obsidian vault lives at `notes/` inside the project repo.
