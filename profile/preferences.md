@@ -35,6 +35,12 @@ tags: [profile, preferences, working-style]
 - **Never** set `textwidth` or `colorcolumn` for markdown or text filetypes. Hard-wrapping is unwanted in prose files.
 - Soft-wrap settings (`wrap`, `linebreak`, `breakindent`) are acceptable.
 
+## Terminal Theming
+
+- **Palette-tracking over fixed hex.** TUI themes should use named colours (or `colorN` indices 0–15) so they follow the active terminal palette. When Kitty swaps its Aletheum dark↔light scheme (via `aletheum-theme-current.conf`), every palette-tracking TUI updates on next redraw without further configuration.
+- Avoid `#RRGGBB` themes unless a pixel-perfect brand match is required *and* the full terminal stack supports truecolour (terminal + multiplexer terminfo with `Tc` + application built with truecolour).
+- Use `bold` and `reverse` attributes aggressively for emphasis (indicator, status bar, search hits) — relying on colour alone is fragile across palette swaps.
+
 ## Collaboration Style
 
 - Prefers terse, direct responses — no trailing summaries explaining what was just done.
