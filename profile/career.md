@@ -12,9 +12,9 @@ Business Analyst with 5+ years of progressive experience spanning accounting, ER
 
 ## Experience
 
-### Senior Technical Business Analyst — Flat6Labs *(Sep 2025 – Present, Remote)*
+### Senior Technical Business Analyst — Flat6Labs *(Jan 2025 – Present, Remote)*
 
-*Promoted from Business Analyst (2025) to Senior Tech. Business Analyst (Sep 2025) — transitioned from product-centricity to product-agnostic strategic alignment.*
+*Internal title since re-joining Flat6Labs in January 2025. Public-facing identity on LinkedIn and the CV remains "Business Analyst" — a deliberate framing choice, not a record of the actual contractual title.*
 
 *MENA's leading startup accelerator*
 
@@ -96,7 +96,6 @@ Granular record of strategic decisions, BA work, consultations, and milestones �
 | **Jan 13, 2026** | **Security Consultation:** Advised immediate cessation of real data usage for payroll testing. Directed NTS to purge all PII from their assets and confirm data disposal. | *Email: Requesting Deletion of Payroll Information... (Israa Waheed / Remaan Merghani)* |
 | **Dec 24, 2025** | **Technical Strategy:** Consulted on the Odoo implementation approach, successfully advocating for a "Vanilla" configuration to minimise custom-code debt. | *Meeting Recap: NTS Kickoff* |
 | **Dec 15, 2025** | **Financial Advisory:** Recommended a simplified "Single Opening Invoice" migration strategy for intercompany balances rather than migrating full journal history. | *Email: Opening Balances* |
-| **Sep 2025** | **Career Milestone:** Title update to **Senior Tech. Business Analyst**. Transitioned from product-centricity to product-agnostic strategic alignment. | *Employment Records / Role Announcement* |
 | **Aug 2025** | **Project Management Training:** Provided training to 25+ users, including the CEO and PMO team, to drive ClickUp adoption and project management standardisation. | *ClickUp Training Materials / Calendar Invites* |
 | **Jul 2025** | **Business Analysis:** Managed the functional audit of the Flat6Labs Ventures website renovation, maintaining a traceability list of 17 major issues on ClickUp. | *ClickUp Task List: Website Renovation Audit* |
 | **May 2025** | **Strategic Mentorship:** Provided technical mentorship to 5 start-ups at the RiseUp Property Tech event, representing Flat6Labs' technical business architecture. | *RiseUp Event Logistics / Mentor Schedule* |

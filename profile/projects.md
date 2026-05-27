@@ -41,7 +41,7 @@ Personal thinking repository — life strategy, direction-setting, decisions, me
 - `fragments/` — raw thought fragments
 - `learning/` — exploratory learning notes (informal; formal nodes live in `knowledge/`)
 - `memory/` — personal memories of significant moments
-- `references/Formal_Reference_Catalogue_Financial_Domain.md` — 58-source annotated catalogue
+- `strategy/`, `decisions/`, `synthesis/`, `plans/` — structured reasoning artefacts
 
 **Scope rule:** Never write formal knowledge nodes here. Never write parkour content here.
 
@@ -51,7 +51,7 @@ Personal thinking repository — life strategy, direction-setting, decisions, me
 
 **Repo:** `logician666/knowledge` · **Local:** `~/personal/knowledge/`
 
-Formal secondary brain — a dependency-ordered knowledge model, not a notes store. 22 nodes across:
+Formal secondary brain — a dependency-ordered knowledge model, not a notes store. Authoritative node index and dependency graph live in `nodes/INDEX.md`; consult it (or query the Obsidian vault) rather than maintaining a node count here. Cluster directories:
 
 - `formal-foundations/` — mathematical logic, ontology, relational theory, process theory/formal verification
 - `domain-modelling/` — DDD, conceptual data modelling
@@ -59,6 +59,7 @@ Formal secondary brain — a dependency-ordered knowledge model, not a notes sto
 - `enterprise-architecture/` — EA, BMM, ArchiMate 3.1, TOGAF 10th ed., European regulatory
 - `requirements/` — RE (ISO 29148), software quality (ISO 25010), SDLC standards
 - `implementation/` — Python type system, OOP, data access, domain architecture, testing, data analysis
+- `systems-administration/` — Fedora, terminal stack, editor/multiplexer, mail, database
 - `music/` — acoustics, music theory, tonal harmony, post-tonal, mathematical music theory
 - `business-domains/` — capstone node
 

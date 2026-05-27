@@ -87,7 +87,8 @@ tags: [profile, tech, setup]
 | Beekeeper Studio | DB GUI | |
 | JupyterLab | Data science | |
 | Okular | PDF viewer | Flatpak |
-| Spotify | Music streaming | **Web browser only** — never the desktop app |
+| spotify-player | Music streaming (TUI) | Primary Spotify client — Aletheum-themed; like keybind configured |
+| Spotify (web) | Music streaming | Fallback only — never the desktop Flatpak app |
 
 ## Ansible Configuration Repo
 

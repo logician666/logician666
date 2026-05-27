@@ -13,8 +13,8 @@ tags: [profile, preferences, working-style]
 
 ## Personal Interests
 
-- Deep passion for **Logic and Mathematics** — has been interested since age 20.
-- Aspires to formally study Logic and Maths once current BA career is established.
+- Deep passion for **Logic and Mathematics**. Self-studied from leaving the Faculty of Science (~2016) and throughout the Faculty of Commerce until graduation in 2020; suspended thereafter by KSA accounting work, never withdrawn.
+- Formal re-entry to mathematics is **postponed** behind two gates: (i) Odoo Functional Consultant certification, and (ii) primary Aletheum business setup — ERP+CRM, website, and essential legal documents (tax ID, commercial registration). The 2026-05-13 Enderton attempt is paused under this gating.
 - Currently focused on mastering business analysis methodology, techniques, and applications.
 - Plays **chess** on Chess.com: username `logician666x` (original `logician666` was deleted during a difficult period).
 
@@ -32,7 +32,7 @@ tags: [profile, preferences, working-style]
 
 ## Tool Preferences
 
-- **Spotify:** Always open via web browser (`https://open.spotify.com/...`). Never use the desktop Flatpak app or the `spotify:` URI protocol. The web player is preferred; the desktop app is considered a resource hog.
+- **Spotify:** Use `spotify-player` (TUI) as primary client, or the web player (`https://open.spotify.com/...`) as fallback. Never use the desktop Flatpak app or the `spotify:` URI protocol — the desktop app is considered a resource hog.
 - **Terminal-first:** Strongly prefer CLI, daemon-based, or config-file-driven solutions over GUI tools. Avoid recommending KDE-integrated or GUI-heavy tools.
 - **Flatpak over Snap:** When packaging matters, prefer Flatpak. Snap was removed from the system entirely (2026-05-07).
 
