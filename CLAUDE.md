@@ -60,10 +60,10 @@ not here.
 
 | Repo | Visibility | Models |
 |---|---|---|
-| `logician666/profile` | **private** | Identity, career, technical setup, preferences, CV |
+| `logician666/profile` | private | Identity, career, technical setup, preferences, CV |
 | `logician666/thoughts` | private | Personal thinking — journals, decisions, fragments |
-| `logician666/knowledge` | public | Formal learning system — dependency-ordered nodes |
-| `logician666/sys-arch` | public | Linux workstation and tooling |
-| `logician666/parkour` | public | Physical training programme |
+| `logician666/knowledge` | private | Formal learning system — dependency-ordered nodes |
+| `logician666/sys-arch` | private | Linux workstation and tooling |
+| `logician666/parkour` | **public** | Physical training programme |
 
 Full architecture: [`ARCHITECTURE.md`](ARCHITECTURE.md)

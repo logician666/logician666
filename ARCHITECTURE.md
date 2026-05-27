@@ -17,20 +17,19 @@ rather than copied.
                   /     /      |       |       \
                  /     /       |       |        \
            profile thoughts knowledge sys-arch  parkour
-        (private  (private   (public   (current  (current
-         identity  thinking) knowledge) state of  state of
-         vault)                          system   training)
-                                       architecture)
+        (private  (private   (private  (private  (public
+         identity  thinking) knowledge) workstation training
+         vault)                          state)    state)
 ```
 
 | Node | Path | Visibility | Models | Status |
 |---|---|---|---|---|
-| `logician666` (root) | `~/personal/logician666/` | public | identity hub | GitHub-profile homepage + this write-up |
-| `profile` | `~/personal/profile/` | **private** | identity vault | authoritative source for career, technical setup, preferences, CV |
+| `logician666` (root) | `~/personal/logician666/` | **public** | identity hub | GitHub-profile homepage + this write-up |
+| `profile` | `~/personal/profile/` | private | identity vault | authoritative source for career, technical setup, preferences, CV |
 | `thoughts` | `~/personal/thoughts/` | private | thinking | personal cognitive space |
-| `knowledge` | `~/personal/knowledge/` | public | formal knowledge | validated nodes only |
-| `sys-arch` | `~/personal/sys-arch/` | public | system | *current state* of the workstation (Fedora + Ansible) |
-| `parkour` | `~/personal/parkour/` | public | training | *current state* of a 16-week periodised programme |
+| `knowledge` | `~/personal/knowledge/` | private | formal knowledge | validated nodes only |
+| `sys-arch` | `~/personal/sys-arch/` | private | system | *current state* of the workstation (Fedora + Ansible) |
+| `parkour` | `~/personal/parkour/` | **public** | training | *current state* of a 16-week periodised programme |
 
 `sys-arch` and `parkour` are *current-state* nodes for their respective domains:
 modifying them is the canonical way to durably change the system or the training
