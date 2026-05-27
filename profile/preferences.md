@@ -24,6 +24,12 @@ tags: [profile, preferences, working-style]
 - Example: `flat6labs-odoo_acct` reads as `[flat6labs] — [odoo account]`; `forever_bikes-kyc.md` reads as `[forever bikes] — [kyc]`.
 - Applies to filenames, folders, branches, and any user-facing slug. Lowercase throughout unless context requires otherwise.
 
+## Fragrance
+
+- Prefers **masculine, sharp, fresh** profiles: aquatic and citrus notes with a cold/icy/menthol feel.
+- Family: fresh aquatic / ozonic / mentholated citrus (e.g. Adidas Ice Dive, Davidoff Cool Water territory).
+- Avoid: warm/oriental, amber, musk-forward, spicy, gourmand, woody-sweet.
+
 ## Tool Preferences
 
 - **Spotify:** Always open via web browser (`https://open.spotify.com/...`). Never use the desktop Flatpak app or the `spotify:` URI protocol. The web player is preferred; the desktop app is considered a resource hog.
@@ -62,3 +68,10 @@ Every project repository follows this subdirectory convention:
 - Work journals at `notes/journals/daily/daily_jrnl-YYYYMMDD.md` — one file per day, sessions as H2 sections.
 - Journal YAML frontmatter: `date: YYYY-MM-DD`, `tags: [daily-journal, project/{name}]`.
 - Never create a flat `notes/journal.md` — always use the daily path.
+
+## Journal scope
+
+- Journals (`thoughts/journal/` and per-project `notes/journals/`) record **actions taken and activities performed** — what I did, decided, or hit a wall on. They are a chronological log of work.
+- Journals are **not** a notebook for information acquired or retrieved during a session. Validated knowledge routes to `knowledge/nodes/…` via `/knowledge-scribe` (or `knowledge/nodes/inbox/` if unvalidated). Project-specific findings route to the project's structured documentation (e.g. `analysis-docs/syrs/` in `odoo-ref`).
+- When a session produces both action and learning: log the action in the journal, scribe the learning to the knowledge graph or project docs. The journal entry may *reference* the knowledge node, but the answer content does not live in the journal.
+- Rationale: two stores, two roles. Journal answers "what did I do on date X?" — knowledge graph answers "what do I know about topic Y?". Mixing them breaks both queries.
