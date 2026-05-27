@@ -1,6 +1,6 @@
 # Personal Knowledge Architecture
 
-I model myself across five git repositories. Each one captures a different dimension
+I model myself across six git repositories. Each one captures a different dimension
 of who I am and how I operate. Together they function as a personal OS — not a
 productivity system, but a structured representation of a person.
 
@@ -8,35 +8,38 @@ productivity system, but a structured representation of a person.
 
 ## The canonical tree
 
-The five repositories form a rooted tree with `logician666` at the root. Every
+The six repositories form a rooted tree with `logician666` at the root. Every
 piece of durable content has a single canonical home; cross-references are explicit
 rather than copied.
 
 ```
-                       logician666  (ROOT — identity)
-                     /      |       |       \
-                    /       |       |        \
-              thoughts  knowledge  sys-arch  parkour
-                  ↕                (current   (current
-            (bidirectional         state of    state of
-             content flow)          system     training)
-                                  architecture)
+                       logician666  (ROOT — public identity hub)
+                  /     /      |       |       \
+                 /     /       |       |        \
+           profile thoughts knowledge sys-arch  parkour
+        (private  (private   (public   (current  (current
+         identity  thinking) knowledge) state of  state of
+         vault)                          system   training)
+                                       architecture)
 ```
 
-| Node | Path | Models | Status |
-|---|---|---|---|
-| `logician666` (root) | `~/personal/logician666/` | identity | root — profile vault + this write-up |
-| `thoughts` | `~/personal/thoughts/` | thinking | personal cognitive space |
-| `knowledge` | `~/personal/knowledge/` | formal knowledge | validated nodes only |
-| `sys-arch` | `~/personal/sys-arch/` | system | *current state* of the workstation (Fedora + Ansible) |
-| `parkour` | `~/personal/parkour/` | training | *current state* of a 16-week periodised programme |
+| Node | Path | Visibility | Models | Status |
+|---|---|---|---|---|
+| `logician666` (root) | `~/personal/logician666/` | public | identity hub | GitHub-profile homepage + this write-up |
+| `profile` | `~/personal/profile/` | **private** | identity vault | authoritative source for career, technical setup, preferences, CV |
+| `thoughts` | `~/personal/thoughts/` | private | thinking | personal cognitive space |
+| `knowledge` | `~/personal/knowledge/` | public | formal knowledge | validated nodes only |
+| `sys-arch` | `~/personal/sys-arch/` | public | system | *current state* of the workstation (Fedora + Ansible) |
+| `parkour` | `~/personal/parkour/` | public | training | *current state* of a 16-week periodised programme |
 
 `sys-arch` and `parkour` are *current-state* nodes for their respective domains:
 modifying them is the canonical way to durably change the system or the training
 plan. Ad-hoc changes that don't make it back to these repos drift out of the model.
 
 The cuts are not arbitrary. Each repo answers a different question:
-*Who am I? How do I think? What do I know? How do I work? How do I move?*
+*Who am I publicly? Who am I privately? How do I think? What do I know? How do I work? How do I move?*
+
+The split between `logician666` and `profile` is a visibility split, not a content split: `logician666` is the public face (README, this architecture write-up), and `profile` is the private authoritative vault (identity facts, CV, career history, preferences). Both serve the identity-hub role at different audiences.
 
 ---
 
@@ -71,12 +74,15 @@ package "Cross-project rules" <<Frame>> {
 
 package "Canonical tree (~/personal/)" <<Cloud>> {
 
-  component "logician666\n(ROOT — identity)" as ROOT
-  package "logician666/profile/" {
+  component "logician666\n(ROOT — public identity hub)" as ROOT
+
+  component "profile\n(private identity vault)" as PROFILE
+  package "profile/" {
     component "hisham.md" as P_HISHAM
     component "career.md" as P_CAREER
     component "technical-setup.md" as P_TECH
     component "preferences.md" as P_PREFS
+    component "cv/cv.tex" as P_CV
   }
 
   component "thoughts\n(personal thinking)" as THOUGHTS
@@ -107,15 +113,17 @@ package "Per-project repos" <<Frame>> {
   end note
 }
 
+ROOT --> PROFILE
 ROOT --> THOUGHTS
 ROOT --> KNOWLEDGE
 ROOT --> SYSARCH
 ROOT --> PARKOUR
 
-ROOT *-- P_HISHAM
-ROOT *-- P_CAREER
-ROOT *-- P_TECH
-ROOT *-- P_PREFS
+PROFILE *-- P_HISHAM
+PROFILE *-- P_CAREER
+PROFILE *-- P_TECH
+PROFILE *-- P_PREFS
+PROFILE *-- P_CV
 
 T_JOURNAL --> T_SYNTH : synthesise
 T_SYNTH   --> T_FRAG  : extract
@@ -173,7 +181,8 @@ Content never crosses boundaries:
 - Formal knowledge nodes never enter `thoughts`
 - Parkour content stays in `parkour`
 - System configuration stays in `sys-arch`
-- Identity facts (name, career, hardware, CV) stay in `logician666/profile/`
+- Identity facts (name, career, hardware, CV) stay in `profile/` (private vault)
+- Public identity artefacts (GitHub README, this architecture write-up) stay in `logician666/`
 
 Cross-vault references use a single notation: `[[→repo:slug]]`, where `slug` is the
 path relative to the target repo's root, without extension. The form is Obsidian-compatible
@@ -187,7 +196,7 @@ it crosses bounded contexts) and grep-searchable.
 | knowledge | thoughts decision | `[[→thoughts:decisions/aletheum-primary-model]]` |
 | thoughts | sys-arch role | `[[→sys-arch:roles/neovim]]` |
 | thoughts | parkour phase | `[[→parkour:conditioning/phase-2-static-strength]]` |
-| any | logician666 profile | `[[→logician666:profile/career]]` |
+| any | profile section | `[[→profile:career]]` |
 
 Within-vault links remain plain `[[node-name]]` (no `→` prefix, no `repo:` namespace) —
 Obsidian resolves them normally. The repos stay separate; the links are traceable.
@@ -249,7 +258,8 @@ Content is instead routed by *type* to whichever node owns its semantics:
 
 | Content type | Canonical home |
 |---|---|
-| Identity, contact, hardware, CV | `logician666/profile/` |
+| Identity, contact, hardware, CV | `profile/` (private repo) |
+| Public GitHub-profile artefacts | `logician666/` (public repo) |
 | Cross-project working-style rules | `~/.claude/CLAUDE.md` |
 | Validated, transferable subject knowledge | `knowledge/nodes/...` via `/knowledge-scribe` |
 | Unvalidated learning fragments | `thoughts/fragments/`, `thoughts/learning/` |
@@ -279,7 +289,7 @@ Two automated routines run in the background:
 
 - **Weekly:** validates `sys-arch` for gaps and opens a GitHub issue if
   anything would break a fresh machine migration
-- **Quarterly:** reviews the `logician666` profile vault for drift against reality
+- **Quarterly:** reviews the `profile` repo for drift against reality
 
 Commits in `thoughts` and `knowledge` are explicit rather than automated: each
 session's edits are committed with a meaningful message at the point the work
@@ -325,7 +335,7 @@ The architecture is sound. The weak point is always execution.
 
 ## Adapting this
 
-The five repos reflect my specific life — the cuts between identity, thinking,
+The six repos reflect my specific life — the cuts between identity, thinking,
 knowledge, work setup, and physical training made sense for me. Yours may be
 different. The principle that transfers: **model the distinct dimensions of yourself
 in separate bounded contexts, and be rigorous about what belongs where.**
@@ -340,5 +350,5 @@ version-controlled targets you control.
 
 ---
 
-*Profile vault: [`logician666/profile/`](profile/hisham.md)*
+*Profile vault: `logician666/profile` (private repo)*
 *Stack: Obsidian · Git · Claude Code*

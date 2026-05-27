@@ -2,11 +2,14 @@
 
 ## What this repository is
 
-**Root of the canonical personal tree** (see `~/.claude/CLAUDE.md` §4). The identity
-hub. Public GitHub profile, CV, personal profile vault, and PKM architecture
-documentation. This is the bounded context for *who I am* — not for thinking,
-learning, training, or tooling. Those live in companion repos (`thoughts`,
-`knowledge`, `sys-arch`, `parkour`) which hang off this root.
+**Public identity hub.** The GitHub-profile homepage and public architecture
+write-up. This is the public face of the personal tree (see
+`~/.claude/CLAUDE.md` §4); private identity content lives in the companion
+`profile` repo.
+
+Bounded context: public artefacts about *who I am*. Not for thinking, learning,
+training, or tooling. Those live in companion repos (`profile`, `thoughts`,
+`knowledge`, `sys-arch`, `parkour`).
 
 ---
 
@@ -15,9 +18,17 @@ learning, training, or tooling. Those live in companion repos (`thoughts`,
 | Path | Purpose |
 |---|---|
 | `README.md` | GitHub profile page — public-facing intro |
-| `ARCHITECTURE.md` | Five-repo PKM architecture write-up — public |
-| `cv/cv.tex` | LaTeX CV — moderncv banking style, deep blue accent |
-| `profile/` | Obsidian vault — authoritative personal profile for AI context |
+| `ARCHITECTURE.md` | Six-repo PKM architecture write-up — public |
+| `CLAUDE.md` | This file — repo governance |
+
+---
+
+## Visibility
+
+This repository is **public**. Treat every commit and file as world-readable.
+Identity facts beyond what is on LinkedIn (phone, secondary email, internal
+job title, salary, strategic context) belong in the private `profile` repo,
+not here.
 
 ---
 
@@ -25,7 +36,7 @@ learning, training, or tooling. Those live in companion repos (`thoughts`,
 
 - **British English** always — en-GB spelling throughout
 - Direct and precise — no padding, no hedging without cause
-- The profile vault is the authoritative source for identity information;
+- The private `profile` repo is the authoritative source for identity facts;
   read it before making claims about Hisham's career, tools, or preferences
 
 ---
@@ -33,11 +44,11 @@ learning, training, or tooling. Those live in companion repos (`thoughts`,
 ## Scope
 
 **In scope:**
-- Updating the profile vault (`profile/*.md`) when facts change
-- Editing the CV (`cv/cv.tex`)
-- Updating `ARCHITECTURE.md` and `README.md`
+- Updating `README.md` (GitHub profile homepage)
+- Updating `ARCHITECTURE.md` (public PKM architecture write-up)
 
 **Out of scope — belongs elsewhere:**
+- Identity facts, career, technical setup, preferences, CV → `profile/`
 - Personal journals, strategy, or life thinking → `thoughts/`
 - Formal knowledge nodes → `knowledge/`
 - Parkour training content → `parkour/`
@@ -47,11 +58,12 @@ learning, training, or tooling. Those live in companion repos (`thoughts`,
 
 ## Companion repositories
 
-| Repo | Models |
-|---|---|
-| `logician666/thoughts` | Personal thinking — journals, decisions, fragments |
-| `logician666/knowledge` | Formal learning system — dependency-ordered nodes |
-| `logician666/parkour` | Physical training programme |
-| `logician666/sys-arch` | Linux workstation and tooling |
+| Repo | Visibility | Models |
+|---|---|---|
+| `logician666/profile` | **private** | Identity, career, technical setup, preferences, CV |
+| `logician666/thoughts` | private | Personal thinking — journals, decisions, fragments |
+| `logician666/knowledge` | public | Formal learning system — dependency-ordered nodes |
+| `logician666/sys-arch` | public | Linux workstation and tooling |
+| `logician666/parkour` | public | Physical training programme |
 
 Full architecture: [`ARCHITECTURE.md`](ARCHITECTURE.md)
